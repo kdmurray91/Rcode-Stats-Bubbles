@@ -250,7 +250,8 @@ m0 <- lm(obs ~ 1 + predictor, data=forprediction)
     \centering
 <<plot0plusabline, dev='tikz', fig.width=10, out.height='0.6\\textheight'>>=
     setPar()
-plot(x=forprediction$predictor, y=forprediction$obs, xlab="predictor", ylab="obs")
+plot(x=forprediction$predictor, y=forprediction$obs,
+     xlab="predictor", ylab="obs")
 abline(m0, col="red", lwd=3) #simple prediction, without SE
 @
 
